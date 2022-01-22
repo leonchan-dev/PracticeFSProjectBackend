@@ -19,8 +19,8 @@ public class DemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		this.userRepository.save(new User("Leon", "Chan","leonc3490@gmail.com"));
-		this.userRepository.save(new User("2", "Chan","2@gmail.com"));
-		this.userRepository.save(new User("3", "Chan","3@gmail.com"));
+		this.userRepository.save(new User("Leon", "Chan","leonc3490@gmail.com","12"));
+		this.userRepository.save(new User("2", "Chan","2@gmail.com","13"));
+		this.userRepository.save(new User("3", "Chan","3@gmail.com","14"));
 	}
 }

@@ -16,17 +16,22 @@ public class User {
     @Column(name = "last_name")
     private String lastName;
 
+    @Column(name = "email")
     private String email;
+
+    @Column(name = "email_id")
+    private String emailId;
 
     public User() {
 
     }
 
-    public User(String firstName, String lastName, String email) {
+    public User(String firstName, String lastName, String email, String emailId) {
         super();
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.emailId = emailId;
     }
 
     public long getId() {
@@ -59,5 +64,15 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
+    }
+
+    public String getEmailId() {
+        return emailId;
+
+
     }
 }
